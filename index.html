@@ -234,6 +234,13 @@
 
     <h1>PHOTOBOOTH <span style="font-size:0.5em">♥</span></h1>
 
+    
+    <!-- MUSIC VIA LINK -->
+    <audio id="bgm" loop>
+    <source src="https://github.com/SpriiXp/jatuh/blob/main/Nadhif%20Basalamah%20-%20kota%20ini%20tak%20sama%20tanpamu%20(Official%20Lyric%20Video)%20-%20nadhif%20basalamah.mp3" type="audio/mpeg">
+</audio>
+
+
     <div class="booth-container">
 
     <!-- STICKER TIMBUL -->
@@ -472,6 +479,11 @@
         function wait(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
+
+    document.body.addEventListener('click', function () {
+    document.getElementById('bgm').play();
+});
+
     </script>
 </body>
 </html>
